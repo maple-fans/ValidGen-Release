@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.rm2pt.generator.validgen.feature_1.0.0.202310211955.jar" id="com.rm2pt.generator.validgen.feature" version="1.0.0.202310211955">
+      <category name="com.rm2pt.generator.validgen"/>
+   </feature>
+   <category-def name="com.rm2pt.generator.validgen" label="ValidGen"/>
+</site>

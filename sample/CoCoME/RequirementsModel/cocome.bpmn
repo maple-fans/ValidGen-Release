@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="ASCII"?>
+<bpmn:Definitions xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI" id="_QFgyIIKAEe2cYNO_afMpIg" name="Scenario">
+  <rootElements xsi:type="bpmn:Process" id="_xDHZrIKWEe2cYNO_afMpIg" description="" name="BuyProduct">
+    <flowElements xsi:type="bpmn:StartEvent" id="_4gS84IKWEe2cYNO_afMpIg" outgoing="_TJjdwIWoEe2CpbdrnuU0vg"/>
+    <flowElements xsi:type="bpmn:Task" id="_BHuFsIKXEe2cYNO_afMpIg" description="" name="openStore" outgoing="_TOAVoIKXEe2cYNO_afMpIg" incoming="_TJjdwIWoEe2CpbdrnuU0vg" testData=""/>
+    <flowElements xsi:type="bpmn:Task" id="_C9XYsIKXEe2cYNO_afMpIg" description="" name="openCashDesk" outgoing="_qm5hUI8REe2j4L55QHmF1w" incoming="_TOAVoIKXEe2cYNO_afMpIg" default="_TOAVoIKXEe2cYNO_afMpIg" testData="openCashDesk.json"/>
+    <flowElements xsi:type="bpmn:Task" id="_FpfAsIKXEe2cYNO_afMpIg" description="" name="orderProducts" outgoing="_fpEh4KuZEe2YMqIj-7GBMA" incoming="_AehAEIZaEe28_bwk3f55mg" default="_TOAVoIKXEe2cYNO_afMpIg" testData="orderProducts.json"/>
+    <flowElements xsi:type="bpmn:Task" id="_HVw8UIKXEe2cYNO_afMpIg" description="" name="receiveOrderedProduct" outgoing="_5xX4EIWoEe2CpbdrnuU0vg" incoming="_lIZRUKuZEe2YMqIj-7GBMA" testData="receiveOrderedProduct.json"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_TOAVoIKXEe2cYNO_afMpIg" targetRef="_C9XYsIKXEe2cYNO_afMpIg" sourceRef="_BHuFsIKXEe2cYNO_afMpIg"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_TmRrsIKXEe2cYNO_afMpIg"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_UDt1oIKXEe2cYNO_afMpIg"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_VFBhoIKXEe2cYNO_afMpIg"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_VaFLoIKXEe2cYNO_afMpIg"/>
+    <flowElements xsi:type="bpmn:Task" id="_r6GKAIKZEe2cYNO_afMpIg" description="" name="listSuppliers" outgoing="_AehAEIZaEe28_bwk3f55mg" incoming="_w7lCAI_uEe2FnqYUZrHCug" testData="listSuppliers.json"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_8sBfkIWNEe2-toXtwIgMcg" description=""/>
+    <flowElements xsi:type="bpmn:Task" id="_00ihwIWUEe2CpbdrnuU0vg" description="" name="showStockReports" outgoing="_1rslQI_yEe2FnqYUZrHCug" incoming="_2k66QIWUEe2CpbdrnuU0vg _5xX4EIWoEe2CpbdrnuU0vg" default="_TOAVoIKXEe2cYNO_afMpIg" testData="showStockReports.json"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_2k66QIWUEe2CpbdrnuU0vg" targetRef="_00ihwIWUEe2CpbdrnuU0vg"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_2-3EQIWUEe2CpbdrnuU0vg"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_3TKgUIWUEe2CpbdrnuU0vg"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_5CZpUIWUEe2CpbdrnuU0vg"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_5bHrUIWUEe2CpbdrnuU0vg"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_APJj4IWVEe2CpbdrnuU0vg"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_AnGJ0IWVEe2CpbdrnuU0vg"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_TJjdwIWoEe2CpbdrnuU0vg" targetRef="_BHuFsIKXEe2cYNO_afMpIg" sourceRef="_4gS84IKWEe2cYNO_afMpIg"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_tHmUIIWoEe2CpbdrnuU0vg"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_tkSQIIWoEe2CpbdrnuU0vg"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_5xX4EIWoEe2CpbdrnuU0vg" description="" targetRef="_00ihwIWUEe2CpbdrnuU0vg" sourceRef="_HVw8UIKXEe2cYNO_afMpIg"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_AehAEIZaEe28_bwk3f55mg" description="" targetRef="_FpfAsIKXEe2cYNO_afMpIg" sourceRef="_r6GKAIKZEe2cYNO_afMpIg"/>
+    <flowElements xsi:type="bpmn:Task" id="_EmpqsIKXEe2cYNO_afMpIg" description="" name="showStockReports" outgoing="_uPU3II_uEe2FnqYUZrHCug" incoming="_vgdVsImJEe2b9Lu57Sz1tg _duy7oI5PEe2Y2IOfsb2KtQ" testData="showStockReports.json"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_Lvf7IImGEe2o1_uT6-hXNQ"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_MGOZEImGEe2o1_uT6-hXNQ"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_pKM-QImJEe2b9Lu57Sz1tg"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_u5ZVsImJEe2b9Lu57Sz1tg"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_vgdVsImJEe2b9Lu57Sz1tg" targetRef="_EmpqsIKXEe2cYNO_afMpIg"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_v6yhQImJEe2b9Lu57Sz1tg"/>
+    <flowElements xsi:type="bpmn:Task" id="_lM2NQIpMEe2TiagphRhqhg" description="" name="processSale" outgoing="_duy7oI5PEe2Y2IOfsb2KtQ" incoming="_dXxiwI5PEe2Y2IOfsb2KtQ _qm5hUI8REe2j4L55QHmF1w _TutHUKCFEe2XSIWYaLENfQ" testData="processSale.json"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_pptaIIpMEe2TiagphRhqhg"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_dXxiwI5PEe2Y2IOfsb2KtQ" targetRef="_lM2NQIpMEe2TiagphRhqhg"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_duy7oI5PEe2Y2IOfsb2KtQ" targetRef="_EmpqsIKXEe2cYNO_afMpIg" sourceRef="_lM2NQIpMEe2TiagphRhqhg"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_qm5hUI8REe2j4L55QHmF1w" targetRef="_lM2NQIpMEe2TiagphRhqhg" sourceRef="_C9XYsIKXEe2cYNO_afMpIg"/>
+    <flowElements xsi:type="bpmn:ExclusiveGateway" id="_gZIjYI_uEe2FnqYUZrHCug" name="addMoreProducts" outgoing="_u2EHAI_uEe2FnqYUZrHCug _w7lCAI_uEe2FnqYUZrHCug _TutHUKCFEe2XSIWYaLENfQ" incoming="_uPU3II_uEe2FnqYUZrHCug"/>
+    <flowElements xsi:type="bpmn:Task" id="_hdPEsI_uEe2FnqYUZrHCug" description="" name="closeCashDesk" outgoing="_nGQskPoDEe2Rt59zlpj1uQ" incoming="_u2EHAI_uEe2FnqYUZrHCug _1rslQI_yEe2FnqYUZrHCug _gOQSkKuZEe2YMqIj-7GBMA" testData="closeCashDesk.json"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_uPU3II_uEe2FnqYUZrHCug" targetRef="_gZIjYI_uEe2FnqYUZrHCug" sourceRef="_EmpqsIKXEe2cYNO_afMpIg"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_u2EHAI_uEe2FnqYUZrHCug" targetRef="_hdPEsI_uEe2FnqYUZrHCug" sourceRef="_gZIjYI_uEe2FnqYUZrHCug"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_w7lCAI_uEe2FnqYUZrHCug" targetRef="_r6GKAIKZEe2cYNO_afMpIg" sourceRef="_gZIjYI_uEe2FnqYUZrHCug"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_1rslQI_yEe2FnqYUZrHCug" targetRef="_hdPEsI_uEe2FnqYUZrHCug" sourceRef="_00ihwIWUEe2CpbdrnuU0vg"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_TutHUKCFEe2XSIWYaLENfQ" description="" targetRef="_lM2NQIpMEe2TiagphRhqhg" sourceRef="_gZIjYI_uEe2FnqYUZrHCug" isLoop="true" loopTimes="1"/>
+    <flowElements xsi:type="bpmn:ExclusiveGateway" id="_ebAMQKuZEe2YMqIj-7GBMA" name="receiveProduct" outgoing="_gOQSkKuZEe2YMqIj-7GBMA _lIZRUKuZEe2YMqIj-7GBMA" incoming="_fpEh4KuZEe2YMqIj-7GBMA"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_fpEh4KuZEe2YMqIj-7GBMA" targetRef="_ebAMQKuZEe2YMqIj-7GBMA" sourceRef="_FpfAsIKXEe2cYNO_afMpIg"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_gOQSkKuZEe2YMqIj-7GBMA" targetRef="_hdPEsI_uEe2FnqYUZrHCug" sourceRef="_ebAMQKuZEe2YMqIj-7GBMA"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_lIZRUKuZEe2YMqIj-7GBMA" targetRef="_HVw8UIKXEe2cYNO_afMpIg" sourceRef="_ebAMQKuZEe2YMqIj-7GBMA"/>
+    <flowElements xsi:type="bpmn:Task" id="_j1UgQPoDEe2Rt59zlpj1uQ" name="closeStore" outgoing="_ng6BMPoDEe2Rt59zlpj1uQ" incoming="_nGQskPoDEe2Rt59zlpj1uQ"/>
+    <flowElements xsi:type="bpmn:EndEvent" id="_mGjjEPoDEe2Rt59zlpj1uQ" incoming="_ng6BMPoDEe2Rt59zlpj1uQ"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_nGQskPoDEe2Rt59zlpj1uQ" targetRef="_j1UgQPoDEe2Rt59zlpj1uQ" sourceRef="_hdPEsI_uEe2FnqYUZrHCug"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_ng6BMPoDEe2Rt59zlpj1uQ" targetRef="_mGjjEPoDEe2Rt59zlpj1uQ" sourceRef="_j1UgQPoDEe2Rt59zlpj1uQ"/>
+    <laneSets id="_0Jhw8IKWEe2cYNO_afMpIg" name="">
+      <lanes id="_0Ji_EIKWEe2cYNO_afMpIg" name="StoreManager" flowNodeRefs="_4gS84IKWEe2cYNO_afMpIg _BHuFsIKXEe2cYNO_afMpIg _FpfAsIKXEe2cYNO_afMpIg _HVw8UIKXEe2cYNO_afMpIg _r6GKAIKZEe2cYNO_afMpIg _00ihwIWUEe2CpbdrnuU0vg _EmpqsIKXEe2cYNO_afMpIg _gZIjYI_uEe2FnqYUZrHCug _j1UgQPoDEe2Rt59zlpj1uQ _mGjjEPoDEe2Rt59zlpj1uQ">
+        <extensionValues id="_kSWP0IZaEe28_bwk3f55mg"/>
+        <extensionValues id="_cCcHwIZdEe28_bwk3f55mg"/>
+        <extensionValues id="_8-e2cIpMEe2TiagphRhqhg"/>
+        <extensionValues id="_CBfdUIpNEe2TiagphRhqhg"/>
+      </lanes>
+      <lanes id="_8NcnkI_dEe2peaNWnM9SLg" name="Cashier" flowNodeRefs="_C9XYsIKXEe2cYNO_afMpIg _lM2NQIpMEe2TiagphRhqhg _hdPEsI_uEe2FnqYUZrHCug _ebAMQKuZEe2YMqIj-7GBMA"/>
+    </laneSets>
+  </rootElements>
+  <rootElements xsi:type="bpmn:Process" id="_dyaxXIWREe2Q04LSEAn77g" name="InitData">
+    <flowElements xsi:type="bpmn:StartEvent" id="_oPwmAIWpEe2CpbdrnuU0vg" outgoing="_uI48kIWpEe2CpbdrnuU0vg"/>
+    <flowElements xsi:type="bpmn:Task" id="_MDpssIWVEe2CpbdrnuU0vg" description="" name="createStore" outgoing="_b4T4QIWVEe2CpbdrnuU0vg" incoming="_uI48kIWpEe2CpbdrnuU0vg" baseUseCase="manageStore" testData="createStore.json"/>
+    <flowElements xsi:type="bpmn:Task" id="_Qmj3MIWVEe2CpbdrnuU0vg" description="" name="createCashDesk" outgoing="_cN5GsIWVEe2CpbdrnuU0vg" incoming="_b4T4QIWVEe2CpbdrnuU0vg" baseUseCase="manageCashDesk" testData="createCashDesk.json"/>
+    <flowElements xsi:type="bpmn:Task" id="_UKOLMIWVEe2CpbdrnuU0vg" description="" name="createProductCatalog" outgoing="_cjVLMIWVEe2CpbdrnuU0vg" incoming="_cN5GsIWVEe2CpbdrnuU0vg" baseUseCase="manageProductCatalog" testData="createProductCatalog.json"/>
+    <flowElements xsi:type="bpmn:Task" id="_WjfvsIWVEe2CpbdrnuU0vg" description="" name="createItem" outgoing="_aKu0QJV8Ee2tZoaS8NUhoA" incoming="_cjVLMIWVEe2CpbdrnuU0vg" baseUseCase="manageItem" testData="createItem.json"/>
+    <flowElements xsi:type="bpmn:Task" id="_YfT8IIWVEe2CpbdrnuU0vg" description="" name="createSupplier" outgoing="_0DGyYJV6Ee2tZoaS8NUhoA" incoming="_aKu0QJV8Ee2tZoaS8NUhoA" baseUseCase="manageSupplier" testData="createSupplier.json"/>
+    <flowElements xsi:type="bpmn:EndEvent" id="_aZslMIWVEe2CpbdrnuU0vg" incoming="_0DGyYJV6Ee2tZoaS8NUhoA"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_be5SsIWVEe2CpbdrnuU0vg"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_b4T4QIWVEe2CpbdrnuU0vg" targetRef="_Qmj3MIWVEe2CpbdrnuU0vg" sourceRef="_MDpssIWVEe2CpbdrnuU0vg"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_cN5GsIWVEe2CpbdrnuU0vg" targetRef="_UKOLMIWVEe2CpbdrnuU0vg" sourceRef="_Qmj3MIWVEe2CpbdrnuU0vg"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_cjVLMIWVEe2CpbdrnuU0vg" targetRef="_WjfvsIWVEe2CpbdrnuU0vg" sourceRef="_UKOLMIWVEe2CpbdrnuU0vg"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_ZqjQIIWpEe2CpbdrnuU0vg"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_uI48kIWpEe2CpbdrnuU0vg" targetRef="_MDpssIWVEe2CpbdrnuU0vg" sourceRef="_oPwmAIWpEe2CpbdrnuU0vg"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_0DGyYJV6Ee2tZoaS8NUhoA" targetRef="_aZslMIWVEe2CpbdrnuU0vg" sourceRef="_YfT8IIWVEe2CpbdrnuU0vg"/>
+    <flowElements xsi:type="bpmn:SequenceFlow" id="_aKu0QJV8Ee2tZoaS8NUhoA" targetRef="_YfT8IIWVEe2CpbdrnuU0vg" sourceRef="_WjfvsIWVEe2CpbdrnuU0vg"/>
+    <laneSets id="_vxLngIWSEe2enN3FZHXjQA">
+      <lanes id="_vxM1oIWSEe2enN3FZHXjQA" name="Administrator" flowNodeRefs="_MDpssIWVEe2CpbdrnuU0vg _Qmj3MIWVEe2CpbdrnuU0vg _UKOLMIWVEe2CpbdrnuU0vg _WjfvsIWVEe2CpbdrnuU0vg _YfT8IIWVEe2CpbdrnuU0vg _aZslMIWVEe2CpbdrnuU0vg _oPwmAIWpEe2CpbdrnuU0vg">
+        <partitionElement xsi:type="bpmn:Task" id="_t_M3EIWTEe2enN3FZHXjQA" description="createStore.json" name="manageStore:createStore (copy)"/>
+      </lanes>
+    </laneSets>
+  </rootElements>
+</bpmn:Definitions>

@@ -1,0 +1,76 @@
+Store:
+- Id: 1
+  Name: Walmart
+  Address: Main
+  IsOpened: false
+- Id: 2
+  Name: Target
+  Address: Elm
+  IsOpened: false
+
+ProductCatalog:
+- Id: 1
+  Name: Apples
+- Id: 2
+  Name: Bananas
+
+CashDesk:
+- Id: 1
+  Name: Desk1
+  IsOpened: false
+- Id: 2
+  Name: Desk2
+  IsOpened: false
+
+Sale:
+- Time: !!str 2021-10-01
+  IsComplete: true
+  Amount: 10.99
+  IsReadytoPay: true
+- Time: !!str 2021-10-02
+  IsComplete: false
+  Amount: 5.99
+  IsReadytoPay: false
+
+Cashier:
+- Id: 1
+  Name: John
+- Id: 2
+  Name: Jane
+
+SalesLineItem:
+- Quantity: 2
+  Subamount: 5.99
+- Quantity: 1
+  Subamount: 2.99
+
+Item:
+- Barcode: 12345
+  Name: Milk
+  Price: 2.99
+  StockNumber: 50
+  OrderPrice: 1.99
+- Barcode: 67890
+  Name: Bread
+  Price: 1.99
+  StockNumber: 100
+  OrderPrice: 0.99
+
+Payment:
+- AmountTendered: 20.00
+- AmountTendered: 5.00
+
+CashPayment:
+- Balance: 2.00
+- Balance: 0.50
+
+
+OrderEntry:
+- Quantity: 10
+  SubAmount: 19.90
+- Quantity: 5
+  SubAmount: 9.95
+
+Supplier:
+- Id: 1
+  Name: test
