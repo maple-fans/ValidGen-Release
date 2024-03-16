@@ -7,7 +7,7 @@
 
 # Case Study Sample
 
-You can get the samples in [here](https://github.com/maple-fans/ValidGen-Release/tree/main/sample/CoCoME).
+You can get the samples in [here](https://github.com/maple-fans/ValidGen-Release/tree/main/sample).
 
 # Installation
 
