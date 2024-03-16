@@ -1,8 +1,13 @@
+- [Case Study Sample](#case-study-sample)
 - [Installation](#installation)
 - [Import RM2PT Project](#import-rm2pt-project)
 - [Generate Process Model](#generate-process-model)
 - [Generate Execution Script](#generate-execution-script)
 - [Requirement Validation](#requirement-validation)
+
+# Case Study Sample
+
+You can get the samples in [here](https://github.com/maple-fans/ValidGen-Release/tree/main/sample/CoCoME).
 
 # Installation
 
