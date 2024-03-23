@@ -3,7 +3,7 @@
 - [Import RM2PT Project](#import-rm2pt-project)
 - [Generate Process Model](#generate-process-model)
 - [Generate Execution Script](#generate-execution-script)
-- [Requirements Validation](#requirement-validation)
+- [Requirements Validation](#requirements-validation)
 
 # Case Study Sample
 
