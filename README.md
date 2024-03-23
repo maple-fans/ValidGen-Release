@@ -3,11 +3,11 @@
 - [Import RM2PT Project](#import-rm2pt-project)
 - [Generate Process Model](#generate-process-model)
 - [Generate Execution Script](#generate-execution-script)
-- [Requirement Validation](#requirement-validation)
+- [Requirements Validation](#requirement-validation)
 
 # Case Study Sample
 
-You can get the samples in [here](https://github.com/maple-fans/ValidGen-Release/tree/main/sample).
+You can get the samples [here](https://github.com/maple-fans/ValidGen-Release/tree/main/sample).
 
 # Installation
 
@@ -18,7 +18,7 @@ Firstly, you need to Download and install RM2PT(https://rm2pt.com/) and InputGen
 ![Install New Software](figure/1.png)
 
 * Online Installer
-  * Click "Add", input the "Name" (it can be any) and the "Location"(https://maple-fans.github.io/ValidGen-Release/), then click "Add".
+  * Click "Add," input the "Name" (it can be any) and the "Location"(https://maple-fans.github.io/ValidGen-Release/), then click "Add."
   
   ![Add Repository](figure/2.png)
 
@@ -53,7 +53,7 @@ Firstly, you need to Download and install RM2PT(https://rm2pt.com/) and InputGen
 
 ![Config1](figure/11.png)
 
-*Input the Api-Key and Click "Apply and Close".
+*Input the Api-Key and Click "Apply and Close."
 
 ![Config2](figure/12.png)
 
@@ -78,7 +78,7 @@ ValidGen" -> "Generate Process Model".
 
 ![Process2](figure/14.png)
 
-* Wait for complete and open diagram automaticlly.
+* Wait for the complete, and the diagram will open automatically.
 
 ![Process3](figure/15.png)
 
@@ -107,7 +107,7 @@ OO Prototype" -> "Generate Desktop Prototype".
 
 ![ValidGen4](figure/21.png)
 
-* Check and Modify the Prompt if presented.
+* Check and modify the prompt if it is presented.
 
 * Wait for complete.
 
@@ -116,6 +116,6 @@ OO Prototype" -> "Generate Desktop Prototype".
 
 
 
-# Requirement Validation
+# Requirements Validation
 * Right-Click Prototype Project -> "Run As" -> "Maven test".
 ![Run1](figure/23.png)
