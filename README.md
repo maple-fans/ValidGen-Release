@@ -1,29 +1,24 @@
-- [Case Study Sample](#case-study-sample)
 - [Installation](#installation)
 - [Import RM2PT Project](#import-rm2pt-project)
 - [Generate Process Model](#generate-process-model)
 - [Generate Execution Script](#generate-execution-script)
-- [Requirements Validation](#requirements-validation)
-
-# Case Study Sample
-
-You can get the samples [here](https://github.com/maple-fans/ValidGen-Release/tree/main/sample).
+- [Requirement Validation](#requirement-validation)
 
 # Installation
 
-Firstly, you need to Download and install RM2PT(https://rm2pt.com/) and InputGen(https://rm2pt.com/advs/inputgen/).
+Firstly, you need to Download and install RM2PT(https://rm2pt.github.io/) and InputGen(https://rm2pt.github.io/advs/inputgen/).
 
 * Click "Help" -> "Install New Software".
 
 ![Install New Software](figure/1.png)
 
 * Online Installer
-  * Click "Add," input the "Name" (it can be any) and the "Location"(https://maple-fans.github.io/ValidGen-Release/), then click "Add."
+  * Click "Add", input the "Name" (it can be any) and the "Location", then click "Add".
   
   ![Add Repository](figure/2.png)
 
 * Offline Installer
-  * Download the package from https://github.com/maple-fans/ValidGen-Release/releases/download/Release/ValidGen.jar
+  * Download the package from https://github.com/RM2PT/ValidGen-UpdateSite/releases/download/v1.0.0/ValidGen.jar
 
   * Click "Add", input the "Name" (it can be any) and Click "Archive".
 
@@ -53,7 +48,7 @@ Firstly, you need to Download and install RM2PT(https://rm2pt.com/) and InputGen
 
 ![Config1](figure/11.png)
 
-*Input the Api-Key and Click "Apply and Close."
+*Input the Api-Key and Click "Apply and Close".
 
 ![Config2](figure/12.png)
 
@@ -78,7 +73,7 @@ ValidGen" -> "Generate Process Model".
 
 ![Process2](figure/14.png)
 
-* Wait for the complete, and the diagram will open automatically.
+* Wait for complete and open diagram automaticlly.
 
 ![Process3](figure/15.png)
 
@@ -107,7 +102,7 @@ OO Prototype" -> "Generate Desktop Prototype".
 
 ![ValidGen4](figure/21.png)
 
-* Check and modify the prompt if it is presented.
+* Check and Modify the Prompt if presented.
 
 * Wait for complete.
 
@@ -116,6 +111,6 @@ OO Prototype" -> "Generate Desktop Prototype".
 
 
 
-# Requirements Validation
+# Requirement Validation
 * Right-Click Prototype Project -> "Run As" -> "Maven test".
 ![Run1](figure/23.png)
