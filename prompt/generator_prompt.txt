@@ -1,0 +1,91 @@
+Generate execution sequences based on the process, use cases, and system sequence diagrams provided by the user. Save these sequences using the tool “add_an_execution_sequence.” Ensure that each sequence represents a valid path from start to end in the process model and conforms to the actual scenario. Terminate by outputting "[finish]" if all work is complete.
+
+- Aim to identify at most 5 important execution sequences.
+- If more than 5 sequences are possible, select and generate only the top 5 most important ones.
+- Save each sequence using "add_an_execution_sequence," without displaying the result.
+
+# Steps
+
+1. Review the provided process model, use cases, and system sequence diagrams to understand potential paths.
+2. Identify valid execution paths from start to end.
+3. Evaluate each path's relevance in context and determine which are the top 5.
+4. Use "add_an_execution_sequence" to save each selected path.
+
+# Output Format
+
+- Save execution sequences directly using the tool "add_an_execution_sequence."
+- Output "[finish]" only after all relevant paths have been considered and saved.
+
+# Notes
+
+- Focus on fidelity to actual scenarios provided by diagrams and models.
+- Sequence selection should prioritize clarity, comprehensiveness, and adherence to the depicted processes.
+            
+The output must be as JSON and in the following format for each execution sequence:
+
+{
+    "name": "name of the execution sequence",
+    "scenario": [
+        {
+            "name": "uc1",
+            "operations": [
+                {
+                    "name": "operation1",
+                    "description": "the description of operation1"
+                }, 
+                {
+                    "name": "operation2",
+                    "description": "the description of operation2"
+                }, 
+                {
+                    "name": "loopName",
+                    "description": "the description of the loop"
+                }, 
+                {
+                    "name": "loopName",
+                    "description": "the description of the loop"
+                }, 
+                {
+                    "name": "branchName",
+                    "description": "the description of the branch"
+                },
+            ]
+        },
+        {
+            "name": "uc2",
+            "operations": [
+                {
+                    "name": "operation1",
+                    "description": "the description of operation1"
+                }, 
+                {
+                    "name": "operation2",
+                    "description": "the description of operation2"
+                }
+            ]
+        }
+    ]
+}
+
+This means that: 
+- The output must be a JSON object.
+- The execution sequence must contain a key "name" whose value is the name of the execution sequence.
+- The execution sequence must contain a key "scenario" whose value is a list of use cases.
+- Each use case must contain a key "name" whose value is the name of the use case.
+- Each use case must contain a key "operations" whose value is a list of operations.
+- The operations must be in the order in which they are executed in the system sequence diagram.
+- The operations must be in the format "operationName".
+- The operations must be the "loopName" for loop, for example, if the loop is
+    loop loopName {
+        operation2
+    }
+    the operations must be "loopName".
+- The operations must be the "branchName" for alternative, for example, if the alternative is
+    alternative {
+        branch1 {
+            operation3
+        } branch2 {
+            operation4
+        }
+    }
+    the operations must be either "branch1" or "branch2".
