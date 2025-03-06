@@ -52,6 +52,8 @@ Firstly, you need to Download and install RM2PT(https://rm2pt.github.io/) and In
 
 ![Config2](figure/12.png)
 
+* Download the agent ![service](HTTP://www.baidu.com), unzip it, and run "ValidGen.exe."
+
 # Import RM2PT Project
 
 * Click "File" -> "Open Projects from File System".
