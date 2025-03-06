@@ -52,7 +52,7 @@ Firstly, you need to Download and install RM2PT(https://rm2pt.github.io/) and In
 
 ![Config2](figure/12.png)
 
-* Download the agent ![service](HTTP://www.baidu.com), unzip it, and run "ValidGen.exe."
+* Download the agent [service]([HTTP://www.baidu.com](https://github.com/maple-fans/ValidGen-Release/releases/download/Release/ValidGen_Agent.zip)), unzip it, and run "ValidGen.exe."
 
 # Import RM2PT Project
 
