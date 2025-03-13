@@ -6,7 +6,7 @@
 
 # Installation
 
-First, Download and install RM2PT(https://rm2pt.github.io/) and InputGen(https://rm2pt.github.io/advs/inputgen/).
+First, Download and install RM2PT(https://rm2pt.github.io/) and InputGen(https://rm2pt.github.io/advs/inputgen/) and the agent [service](https://github.com/maple-fans/ValidGen-Release/releases/download/Release/ValidGen_Agent.zip), unzip it, and run "ValidGen.exe."
 
 * Click "Help" -> "Install New Software".
 
@@ -51,8 +51,6 @@ First, Download and install RM2PT(https://rm2pt.github.io/) and InputGen(https:/
 *Input the Api-Key and Click "Apply and Close".
 
 ![Config2](figure/12.png)
-
-* Download the agent [service](https://github.com/maple-fans/ValidGen-Release/releases/download/Release/ValidGen_Agent.zip), unzip it, and run "ValidGen.exe."
 
 # Import RM2PT Project
 
