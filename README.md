@@ -104,8 +104,6 @@ OO Prototype" -> "Generate Desktop Prototype".
 
 ![ValidGen4](figure/21.png)
 
-* Check and Modify the Prompt if presented.
-
 * Wait for complete.
 
 ![ValidGen5](figure/22.png)
