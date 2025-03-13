@@ -48,7 +48,7 @@ First, Download and install [RM2PT](https://rm2pt.github.io/), [InputGen](https:
 
 ![Config1](figure/11.png)
 
-*Input the OPENAI API key and the host and port (just use the defaults "127.0.0.1" and "27008"), and then click "Apply and Close."
+*Input the OPENAI API key and the host and port (use the defaults "127.0.0.1" and "27008"), and then click "Apply and Close."
 
 ![Config2](figure/12.png)
 
