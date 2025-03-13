@@ -71,10 +71,6 @@ ValidGen" -> "Generate Process Model".
 
 ![Process1](figure/13.png)
 
-* Check and Modify the Prompt.
-
-![Process2](figure/14.png)
-
 * Wait for complete and open diagram automaticlly.
 
 ![Process3](figure/15.png)
