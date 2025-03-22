@@ -13,7 +13,7 @@ First, Download and install [RM2PT](https://rm2pt.github.io/), [InputGen](https:
 ![Install New Software](figure/1.png)
 
 * Online Installer
-  * Click "Add," input the "Name" (it can be any) and the "Location," then click "Add."
+  * Click "Add," input the "Name" (it can be any) and the "Location (https://maple-fans.github.io/ValidGen-Release/)," then click "Add."
   
   ![Add Repository](figure/2.png)
 
