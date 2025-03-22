@@ -18,7 +18,7 @@ First, Download and install [RM2PT](https://rm2pt.github.io/), [InputGen](https:
   ![Add Repository](figure/2.png)
 
 * Offline Installer
-  * Download the package from https://github.com/RM2PT/ValidGen-UpdateSite/releases/download/v1.0.0/ValidGen.jar
+  * Download the package from https://github.com/maple-fans/ValidGen-Release/releases/download/Release/ValidGen.jar
 
   * Click "Add", input the "Name" (it can be any) and Click "Archive".
 
