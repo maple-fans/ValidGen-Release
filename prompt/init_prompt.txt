@@ -1,0 +1,142 @@
+Please generate 3 ~ 5 execution sequences based on these information:
+
+[process]
+{process}
+[process]
+
+[usecase]
+{use_cases}
+[usecase]
+
+[system sequence diagram]
+{ssd}
+[system sequence diagram]
+
+Here are the instructment of input format:
+
+The process model is presented in the following format:
+            
+[process]
+Start -> UseCase0(uc1)
+UseCase0(uc1) -> UseCase1(uc2)
+Branch2(cond1?) -> UseCase2(uc3)
+UseCase2(uc3) -> End
+Branch2(cond1?) -> UseCase3(uc4)
+UseCase3(uc4) -> End
+[process]
+
+The process means that:
+- The process starts with the Start node.
+- The Start node is followed by the UseCase0 node, which represents the use case uc1.
+- The UseCase0 node is followed by the UseCase1 node, which represents the use case uc2.
+- The Branch2 node is followed by the UseCase2 node, which represents the use case uc3.
+- The UseCase2 node is followed by the End node.
+- The Branch2 node is followed by the UseCase3 node, which represents the use case uc4.
+- The UseCase3 node is followed by the End node.
+- The process ends with the End node.
+
+The use cases is presented in the following format:
+
+[usecase]
+name: uc1, actor: act1
+name: uc2, actor: act1
+name: uc3, actor: act2
+...
+[usecase]
+
+The system sequence diagram is presented in the following format:
+
+[system sequence diagram]
+
+UseCase1SSD {
+    operation1
+    loop loopName {
+        operation2
+    }
+    alternative {
+        branch1 {
+            operation3
+        } branch2 {
+            operation4
+        }
+    }
+}
+[system sequence diagram]
+
+The system sequence diagram means that:
+- The system sequence diagram UseCase1SSD contains the operation operation1. 
+- The system sequence diagram UseCase1SSD contains a loop named loopName, which contains the operation operation2.
+- The system sequence diagram UseCase1SSD contains an alternative, which contains the cash branch and the card branch.
+- The cash branch contains the operation operation3.
+- The card branch contains the operation operation4.
+"""
+
+OUTPUT_FORMAT: str = """
+The output must be as JSON and in the following format for each execution sequence:
+
+{
+    "name": "name of the execution sequence",
+    "scenario": [
+        {
+            "name": "uc1",
+            "operations": [
+                {
+                    "name": "operation1",
+                    "description": "the description of operation1"
+                }, 
+                {
+                    "name": "operation2",
+                    "description": "the description of operation2"
+                }, 
+                {
+                    "name": "loopName",
+                    "description": "the description of the loop"
+                }, 
+                {
+                    "name": "loopName",
+                    "description": "the description of the loop"
+                }, 
+                {
+                    "name": "branchName",
+                    "description": "the description of the branch"
+                },
+            ]
+        },
+        {
+            "name": "uc2",
+            "operations": [
+                {
+                    "name": "operation1",
+                    "description": "the description of operation1"
+                }, 
+                {
+                    "name": "operation2",
+                    "description": "the description of operation2"
+                }
+            ]
+        }
+    ]
+}
+
+This means that: 
+- The output must be a JSON object.
+- The execution sequence must contain a key "name" whose value is the name of the execution sequence.
+- The execution sequence must contain a key "scenario" whose value is a list of use cases.
+- Each use case must contain a key "name" whose value is the name of the use case.
+- Each use case must contain a key "operations" whose value is a list of operations.
+- The operations must be in the order in which they are executed in the system sequence diagram.
+- The operations must be in the format "operationName".
+- The operations must be the "loopName" for loop, for example, if the loop is
+    loop loopName {
+        operation2
+    }
+    the operations must be "loopName".
+- The operations must be the "branchName" for alternative, for example, if the alternative is
+    alternative {
+        branch1 {
+            operation3
+        } branch2 {
+            operation4
+        }
+    }
+    the operations must be either "branch1" or "branch2".
