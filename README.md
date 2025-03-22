@@ -6,7 +6,7 @@
 
 # Installation
 
-First, Download and install [RM2PT](https://rm2pt.github.io/), [InputGen](https://rm2pt.github.io/advs/inputgen/), and the [agent service](https://github.com/maple-fans/ValidGen-Release/releases/download/Release/ValidGen_Agent.zip), unzip it, and run "ValidGen.exe."
+First, Download and install [RM2PT](https://rm2pt.github.io/), [InputGen](https://rm2pt.github.io/advs/inputgen/), and the [agent service](https://github.com/maple-fans/ValidGen-Release/releases/download/Release/ValidGen/ValidGen_Agent.zip), unzip it, and run "ValidGen.exe."
 
 * Click "Help" -> "Install New Software".
 
@@ -18,7 +18,7 @@ First, Download and install [RM2PT](https://rm2pt.github.io/), [InputGen](https:
   ![Add Repository](figure/2.png)
 
 * Offline Installer
-  * Download the package from https://github.com/maple-fans/ValidGen-Release/releases/download/Release/ValidGen.jar
+  * Download the package from https://github.com/maple-fans/ValidGen-Release/releases/download/Release/ValidGen/ValidGen.jar
 
   * Click "Add", input the "Name" (it can be any) and Click "Archive".
 
